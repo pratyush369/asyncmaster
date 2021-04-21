@@ -29,7 +29,7 @@ public class masterApp
             System.out.println("Enter Worker Name to send: ");
             QUEUE_NAME_WORKER = sc.next();
         }
-
+//
 
     }
 }

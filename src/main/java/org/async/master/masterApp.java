@@ -20,9 +20,8 @@ public class masterApp
         channel.queueDeclare(QUEUE_NAME_MASTER, false, false, false, null);
         // Receiving Output from Client
         rec.recData(QUEUE_NAME_MASTER, rec.getDeliverCallbackMaster(QUEUE_NAME_MASTER, channel), channel);
-        System.out.println("Enter Worker Name to send: ");
         QUEUE_NAME_WORKER = sc.next();
-        while (!QUEUE_NAME_MASTER.equals("Exit")) {
+        while (!QUEUE_NAME_WORKER.equals("Exit")) {
             File file = new File("d:\\black\\Desktop\\test.py");
             byte[] data = sender.setDataForClient("test.py", "python test.py", file);
             sender.sendData(data, QUEUE_NAME_WORKER, channel);

@@ -29,7 +29,6 @@ public class masterApp
             System.out.println("RECEIVING OUTPUT FROM- " + QUEUE_NAME_WORKER);
             System.out.println("Enter Worker Name to send: ");
             QUEUE_NAME_WORKER = sc.next();
-
         }
 
 

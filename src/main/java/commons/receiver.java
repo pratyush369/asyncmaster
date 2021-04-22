@@ -28,6 +28,7 @@ public class receiver extends execEngine {
                 System.out.println("Output:\n" + output);
                 long timeTaken = commonAck.getTimeTaken();
                 System.out.println("Time Taken: " + timeTaken);
+                System.out.println("Enter next Worker's name: ");
             } catch (Exception e) {
                 e.printStackTrace();
                 try {

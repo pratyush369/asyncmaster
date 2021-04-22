@@ -30,8 +30,8 @@ public class masterApp
             byte[] data = sender.setDataForClient(file.getName(), command, file);
             sender.sendData(data, QUEUE_NAME_WORKER, channel);
             System.out.println("RECEIVING OUTPUT FROM- " + QUEUE_NAME_WORKER);
-            System.out.println("Enter Worker Name to send: ");
-            QUEUE_NAME_WORKER = sc.next();
+            //System.out.println("Enter Worker Name to send: ");
+            QUEUE_NAME_WORKER = sc.nextLine();
         }
 //
 
